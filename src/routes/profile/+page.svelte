@@ -1,1 +1,5 @@
-<h1 class="text-2xl font-bold text-red-500">Welcome to your profile</h1>
+<script>
+	import Board from '$lib/components/board.svelte';
+</script>
+
+<Board />
