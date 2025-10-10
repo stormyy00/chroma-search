@@ -1,5 +1,5 @@
 <script lang="ts">
-	import Dashboard from '$lib/components/idea/dashboard.svelte';
+	// import Dashboard from '$lib/components/idea/dashboard.svelte';
 
 	let ideas = [
 		{
@@ -14,4 +14,11 @@
 	];
 </script>
 
-<Dashboard {ideas} onNewIdea={() => console.log('New idea!')} />
+<!-- <Dashboard {ideas} onNewIdea={() => console.log('New idea!')} />\ -->
+{#each ideas as idea (idea.id)}
+	<div class="p-4">
+		<p class="text-lg font-bold">{idea.title}</p>
+		<p class="text-sm text-gray-600">{idea.content}</p>
+		<p class="text-xs text-gray-500">Tags: {idea.tags.join(', ')}</p>
+	</div>
+{/each}
