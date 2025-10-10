@@ -4,6 +4,18 @@
 
 @custom-variant dark (&:is(.dark *));
 
+@theme {
+	--color-bb-bg: #f5ebdd;
+	--color-bb-paper: #fbf7f0;
+	--color-bb-ink: #1f2a2e;
+	--color-bb-blue: #5b88a5;
+	--color-bb-blue-dark: #3f6a86;
+	--color-bb-moss: #7e8d5a;
+	--color-bb-tea: #b7c9a9;
+	--color-bb-coral: #e9a38f;
+	--color-bb-gold: #d7b070;
+}
+
 :root {
 	--radius: 0.625rem;
 	--background: oklch(1 0 0);
